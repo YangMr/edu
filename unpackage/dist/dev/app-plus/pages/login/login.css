@@ -1,0 +1,102 @@
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/*文本基本颜色*/
+/* 下划线 */
+.app {
+  display: flex;
+  flex-direction: column;
+  padding-top: 6.25rem;
+}
+.back-btn {
+  position: absolute;
+  padding: 0.625rem;
+  font-size: 1.21875rem;
+  color: #606266;
+  left: 0.625rem;
+  top: calc(var(--status-bar-height) + 0.625rem);
+}
+.left-top-sign {
+  font-size: 3.75rem;
+  color: #f8f8f8;
+}
+.welcome {
+  position: relative;
+  top: -2.8125rem;
+  font-size: 1.4375rem;
+  padding-left: 1.875rem;
+  color: #555;
+  text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.3);
+}
+.input-content {
+  padding: 0 1.875rem;
+}
+.input-item {
+  background-color: #f8f6fc;
+  margin-bottom: 1.5625rem;
+  padding-left: 0.9375rem;
+  border-radius: 0.125rem;
+  height: 3.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.input-item:last-child {
+  margin-bottom: 0;
+}
+.input-item .row {
+  width: 100%;
+}
+.input-item .tit {
+  font-size: 0.8125rem;
+  color: #606266;
+  height: 1.5625rem;
+  line-height: 1.5625rem;
+}
+.input-item uni-input {
+  font-size: 0.9375rem;
+  height: 1.875rem;
+  flex: 1;
+  color: #303133;
+}
+uni-button[type=primary] {
+  background-color: #345dc2 !important;
+}
+.other-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 0.625rem;
+  margin-top: 2.5rem;
+}
+.other-wrapper .line {
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+.other-wrapper .line .tit {
+  font-size: 0.75rem;
+  color: #606266;
+  margin: 0 1rem;
+}
+.other-wrapper .line uni-text:before, .other-wrapper .line uni-text::after {
+  content: "";
+  display: block;
+  width: 5rem;
+  height: 0;
+  border-top: 1px solid #e0e0e0;
+}
+.other-wrapper .icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 0 1.5625rem;
+}
